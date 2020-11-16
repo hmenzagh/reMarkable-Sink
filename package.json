@@ -1,0 +1,19 @@
+{
+	"name": "ReMarkable-Sink",
+	"version": "1.0.0",
+	"description": "ReMarkable-Tablet PDF sink",
+	"main": "index.js",
+	"repository": "https://github.com/hmenzagh/ReMarkable-Sink",
+	"author": "hmenzagh",
+	"license": "MIT",
+	"dependencies": {
+		"dotenv": "^8.2.0",
+		"esm": "^3.2.25",
+		"fb-watchman": "^2.0.1",
+		"lodash": "^4.17.20"
+	},
+	"scripts": {
+		"start": "node index.js",
+		"dev": "nodemon index.js"
+	}
+}
