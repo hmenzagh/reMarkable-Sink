@@ -42,7 +42,7 @@ Done 🎉
 
 add
 
-```@reboot forever start /Users/hmenzagh/Projects/ReMarkable-Sink/index.js```
+```@reboot /urs/local/bin/forever start /Users/hmenzagh/Projects/ReMarkable-Sink/index.js```
 
 replacing `/Users/hmenzagh/Projects/ReMarkable-Sink/` with your path !
 
