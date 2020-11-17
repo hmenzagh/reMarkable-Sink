@@ -6,7 +6,7 @@
 /*   By: hmenzagh <hmenzagh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 20:10:06 by hmenzagh          #+#    #+#             */
-/*   Updated: 2020/11/17 03:31:21 by hmenzagh         ###   ########.fr       */
+/*   Updated: 2020/11/17 09:21:13 by hmenzagh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,17 +101,4 @@ client.on('subscription', (resp) => {
 	filesCache = _.without(_.uniq([...filesCache, ...files.toAdd]), ...files.toDel);
 
 	processFiles(filesCache);
-});
-
-
-client.on('subscription', (resp) => {
-	if (resp.subscription !== 'PDFSubscription') return;
-
-	// ~~~~~~~~~ Update Files to Push ~~~~~~~~ //
-	const files = resp.files.reduce((acc, curr) =>
-		curr.exists ? {...acc, toAdd: [...acc.toAdd, curr.name]} : {...acc, toDel: [...acc.toDel, curr.name]},
-		{ toAdd: [], toDel: [] })
-	filesCache = _.without(_.uniq([...filesCache, ...files.toAdd]), ...files.toDel)
-
-	processFiles(filesCache)
 });
