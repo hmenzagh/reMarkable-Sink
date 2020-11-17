@@ -37,7 +37,7 @@ Done 🎉
 
 *(Tested on Big Sur)*
 
-**1 - Update `com.reMarkable-Sink.hmenzagh.plist`**
+**1 - Update `com.remarkable-sink.hmenzagh.plist`**
 
 Change line `:15` to reflect your folder absolute path
 
@@ -62,7 +62,7 @@ Change line `:15` to reflect your folder absolute path
 **5 - Move the plist to Launch LaunchAgents**
 
 ```bash
-mv com.reMarkable-Sink.hmenzagh.plist ~/Library/LaunchAgents/.
+mv com.remarkable-sink.hmenzagh.plist ~/Library/LaunchAgents/.
 ```
 
 ### Linux
