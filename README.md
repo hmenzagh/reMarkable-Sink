@@ -53,7 +53,11 @@ brew install bash
 
 ⚠️ This is needed because of MacOS's **SIP** that prevents reMarkable-Sink from deleting/reading the PDFs properly and causes EPERM errors. The other option is to disable SIP witch is not recommended for most users.
 
-**4 - Move the plist to Launch LaunchAgents**
+**4 - Install [forever](https://github.com/foreverjs/forever#readme)**
+
+```npm install forever -g```
+
+**5 - Move the plist to Launch LaunchAgents**
 
 ```bash
 mv com.reMarkable-Sink.hmenzagh.plist ~/Library/LaunchAgents/.
