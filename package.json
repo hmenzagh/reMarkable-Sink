@@ -1,7 +1,7 @@
 {
 	"name": "reMarkable-Sink",
 	"version": "1.0.0",
-	"description": "ReMarkable-Tablet PDF sink",
+	"description": "reMarkable-Tablet PDF sink",
 	"main": "index.js",
 	"repository": "https://github.com/hmenzagh/reMarkable-Sink",
 	"author": "hmenzagh",

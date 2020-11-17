@@ -1,6 +1,6 @@
 ![logo](./assets/logo.png)
 
-Ultra-simple node app that uploads files from a folder to your ReMarkable Tablet thanks to [RmApi](https://github.com/juruen/rmapi) & [watchman](https://facebook.github.io/watchman/docs/install.html).
+Ultra-simple node app that uploads files from a folder to your reMarkable Tablet thanks to [RmApi](https://github.com/juruen/rmapi) & [watchman](https://facebook.github.io/watchman/docs/install.html).
 It can be used for simple dnd transfer and can be useful in many other automated applications.
 
 ⚠️ Files placed in the folder will be **uploaded then deleted** ⚠️
@@ -22,7 +22,7 @@ Make sure you can execute `rmapi` just by typing `rmapi` in your terminal.
 ```bash
 PATH_TO_RMAPI='/Users/hmenzagh/go/bin/rmapi'
 SINK_FOLDER_PATH='/Users/hmenzagh/Desktop/reMarkable-Sink' # Must be an absolute path
-REMARKABLE_FOLDER='Sink' # To create in top-level ReMarkable folder
+REMARKABLE_FOLDER='Sink' # To create in top-level reMarkable folder
 ```
 
 **5 - Do a quick test with `yarn start`**
