@@ -9,7 +9,7 @@ It can be used for simple dnd transfer and can be useful in many other automated
 
 **1 - Clone & install repo**
 
-`git clone https://github.com/hmenzagh/ReMarkable-Sink && cd ReMarkable-Sink && yarn`
+`git clone https://github.com/hmenzagh/reMarkable-Sink && cd reMarkable-Sink && yarn`
 
 **2 - Install [watchman](https://facebook.github.io/watchman/docs/install.html)**
 
@@ -21,7 +21,7 @@ Make sure you can execute `rmapi` just by typing `rmapi` in your terminal.
 
 ```bash
 PATH_TO_RMAPI='/Users/hmenzagh/go/bin/rmapi'
-SINK_FOLDER_PATH='/Users/hmenzagh/Desktop/ReMarkable-Sink' # Must be an absolute path
+SINK_FOLDER_PATH='/Users/hmenzagh/Desktop/reMarkable-Sink' # Must be an absolute path
 REMARKABLE_FOLDER='Sink' # To create in top-level ReMarkable folder
 ```
 
@@ -35,7 +35,7 @@ Done 🎉
 
 *(Tested on Big Sur)*
 
-**1 - Update `com.remarkable-sink.hmenzagh.plist`**
+**1 - Update `com.reMarkable-Sink.hmenzagh.plist`**
 
 Change line `:15` to reflect your folder absolute path
 
@@ -51,12 +51,12 @@ Change line `:15` to reflect your folder absolute path
 
 brew install bash
 
-⚠️ This is needed because of MacOS's **SIP** that prevents ReMarkable-Sink from deleting/reading the PDFs properly and causes EPERM errors. The other option is to disable SIP witch is not recommended for most users.
+⚠️ This is needed because of MacOS's **SIP** that prevents reMarkable-Sink from deleting/reading the PDFs properly and causes EPERM errors. The other option is to disable SIP witch is not recommended for most users.
 
 **4 - Move the plist to Launch LaunchAgents**
 
 ```bash
-mv com.remarkable-sink.hmenzagh.plist ~/Library/LaunchAgents/.
+mv com.reMarkable-Sink.hmenzagh.plist ~/Library/LaunchAgents/.
 ```
 
 ### Linux
@@ -67,9 +67,9 @@ mv com.remarkable-sink.hmenzagh.plist ~/Library/LaunchAgents/.
 
 `sudo npm install pm2 -g`
 
-**2 - Start RemarKable-Sink**
+**2 - Start reMarkable-Sink**
 
-`pm2 start index.js -n ReMarkable-Sink`
+`pm2 start index.js -n reMarkable-Sink`
 
 **3 - Save setup**
 
