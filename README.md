@@ -83,5 +83,3 @@ mv com.reMarkable-Sink.hmenzagh.plist ~/Library/LaunchAgents/.
 
 - Only accepts PDFs < 50mo
 - The user that executes index.sj needs to be the user that is logged in with RmAPI
-- 
-
