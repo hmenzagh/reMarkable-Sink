@@ -15,9 +15,9 @@ Demo video: https://www.youtube.com/watch?v=SX8s0wqZ2ks&feature=youtu.be
 
 **2 - Install [watchman](https://facebook.github.io/watchman/docs/install.html)**
 
-**3 - Install & Configure & Set PATH for [RmApi](https://github.com/juruen/rmapi)**
+**3 - Install & Configure [RmApi](https://github.com/juruen/rmapi)**
 
-Make sure you can execute `rmapi` just by typing `rmapi` in your terminal.
+Don't forget to run & set your one-time code !
 
 **4 - Setup .env file**
 
