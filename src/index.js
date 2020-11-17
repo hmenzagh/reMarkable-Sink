@@ -6,7 +6,7 @@
 /*   By: hmenzagh <hmenzagh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 20:10:06 by hmenzagh          #+#    #+#             */
-/*   Updated: 2020/11/17 01:46:46 by hmenzagh         ###   ########.fr       */
+/*   Updated: 2020/11/17 03:31:21 by hmenzagh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@ import _ from 'lodash';
 import child from 'child_process';
 import watchman from 'fb-watchman';
 
-const { SINK_FOLDER_PATH, PATH_TO_RMAPI, REMARKABLE_FOLDER, RMAPI_CONFIG } = process.env;
+const { SINK_FOLDER_PATH, PATH_TO_RMAPI, REMARKABLE_FOLDER } = process.env;
 
 const client = new watchman.Client();
 
@@ -72,7 +72,7 @@ let filesCache = [];
 
 const processFiles = _.debounce((files) => {
 	if (files.length) {
-		const RmApi = child.spawn(`export RMAPI_CONFIG=${RMAPI_CONFIG} && ${PATH_TO_RMAPI}`);
+		const RmApi = child.spawn(PATH_TO_RMAPI);
 		// ~~~~~~~~~~~~~ Upload Files ~~~~~~~~~~~~ //
 		for (let i = 0; i < files.length; i++) {
 			const file = files[i];

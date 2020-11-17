@@ -21,7 +21,6 @@ Make sure you can execute `rmapi` just by typing `rmapi` in your terminal.
 
 ```bash
 PATH_TO_RMAPI='/Users/hmenzagh/go/bin/rmapi'
-RMAPI_CONFIG='./Library/Application\ Support/rmapi/rmapi.conf' # Usually in ~/.rmapi on Linux machines
 SINK_FOLDER_PATH='/Users/hmenzagh/Desktop/ReMarkable-Sink' # Must be an absolute path
 REMARKABLE_FOLDER='Sink' # To create in top-level ReMarkable folder
 ```
