@@ -20,6 +20,8 @@ Make sure you can execute `rmapi` just by typing `rmapi` in your terminal.
 **4 - Setup .env file**
 
 ```bash
+PATH_TO_RMAPI='/Users/hmenzagh/go/bin/rmapi'
+RMAPI_CONFIG='./Library/Application\ Support/rmapi/rmapi.conf' # Usually in ~/.rmapi on Linux machines
 SINK_FOLDER_PATH='/Users/hmenzagh/Desktop/ReMarkable-Sink' # Must be an absolute path
 REMARKABLE_FOLDER='Sink' # To create in top-level ReMarkable folder
 ```
@@ -30,19 +32,18 @@ Done 🎉
 
 ## Run at startup
 
-*(This setup is done for MacOS depending on your OS process will differ)*
+**1 - Install [PM2](https://github.com/Unitech/pm2)**
 
-**1 - Install [forever](https://github.com/foreverjs/forever#readme)**
+`npm install pm2 -g`
 
-`npm install forever -g`
+**2 - Start RemarKable-Sink**
 
-**2 - Edit crontab**
+`pm2 start index.js -n ReMarkable-Sink`
 
-```sudo crontab -e```
+**3 - Save setup**
 
-add
+`pm2 save`
 
-```@reboot /urs/local/bin/forever start /Users/hmenzagh/Projects/ReMarkable-Sink/index.js```
+**4 - Set at startup**
 
-replacing `/Users/hmenzagh/Projects/ReMarkable-Sink/` with your path !
-
+`pm2 startup` or `sudo pm2 startup` and follow instructions if needed !
