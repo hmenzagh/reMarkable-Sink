@@ -10,6 +10,7 @@
 		"dotenv": "^8.2.0",
 		"esm": "^3.2.25",
 		"fb-watchman": "^2.0.1",
+		"fs": "^0.0.1-security",
 		"lodash": "^4.17.20"
 	},
 	"scripts": {

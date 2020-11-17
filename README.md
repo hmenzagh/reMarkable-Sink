@@ -31,9 +31,41 @@ Done 🎉
 
 ## Run at startup
 
+### MacOS
+
+*(Tested on Big Sur)*
+
+**1 - Update `com.remarkable-sink.hmenzagh.plist`**
+
+Change line `:15` to reflect your folder absolute path
+
+**2 - Install [Brew](https://brew.sh)**
+
+*Setup command as of 11/2020*
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```
+
+**3 - Install bash**
+
+brew install bash
+
+⚠️ This is needed because of MacOS's **SIP** that prevents ReMarkable-Sink from deleting/reading the PDFs properly and causes EPERM errors. The other option is to disable SIP witch is not recommended for most users.
+
+**4 - Move the plist to Launch LaunchAgents**
+
+```bash
+mv com.remarkable-sink.hmenzagh.plist ~/Library/LaunchAgents/.
+```
+
+### Linux
+
+*(Alternatively you can setup a crontab)*
+
 **1 - Install [PM2](https://github.com/Unitech/pm2)**
 
-`npm install pm2 -g`
+`sudo npm install pm2 -g`
 
 **2 - Start RemarKable-Sink**
 
@@ -45,4 +77,11 @@ Done 🎉
 
 **4 - Set at startup**
 
-`pm2 startup` or `sudo pm2 startup` and follow instructions if needed !
+`sudo pm2 startup` and follow instructions if needed !
+
+## Limitations
+
+- Only accepts PDFs < 50mo
+- The user that executes index.sj needs to be the user that is logged in with RmAPI
+- 
+

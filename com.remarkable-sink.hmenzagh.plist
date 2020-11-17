@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>Label</key>
+		<string>com.remarkable-sink.hmenzagh</string>
+
+		<key>EnvironmentVariables</key>
+		<dict>
+			<key>PATH</key>
+			<string><![CDATA[/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin]]></string>
+		</dict>
+
+		<key>WorkingDirectory</key>
+		<string>/path/to/ReMarkable-Sink</string>
+
+		<key>ProgramArguments</key>
+		<array>
+			<string>./daemon.sh</string>
+		</array>
+
+		<key>RunAtLoad</key>
+		<true/>
+	</dict>
+</plist>
