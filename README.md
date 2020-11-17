@@ -3,6 +3,8 @@
 Ultra-simple node app that uploads files from a folder to your reMarkable Tablet thanks to [RmApi](https://github.com/juruen/rmapi) & [watchman](https://facebook.github.io/watchman/docs/install.html).
 It can be used for simple dnd transfer and can be useful in many other automated applications.
 
+Demo video: https://www.youtube.com/watch?v=SX8s0wqZ2ks&feature=youtu.be
+
 ⚠️ Files placed in the folder will be **uploaded then deleted** ⚠️
 
 ## Installation
