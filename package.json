@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"repository": "https://github.com/hmenzagh/reMarkable-Sink",
 	"author": "hmenzagh",
-	"license": "MIT",
+	"license": "GNU General Public License v3.0",
 	"dependencies": {
 		"dotenv": "^8.2.0",
 		"esm": "^3.2.25",
