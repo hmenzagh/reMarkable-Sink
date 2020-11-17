@@ -51,7 +51,7 @@ Change line `:15` to reflect your folder absolute path
 
 **3 - Install bash**
 
-brew install bash
+```brew install bash```
 
 ⚠️ This is needed because of MacOS's **SIP** that prevents reMarkable-Sink from deleting/reading the PDFs properly and causes EPERM errors. The other option is to disable SIP witch is not recommended for most users.
 
