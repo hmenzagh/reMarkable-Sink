@@ -29,7 +29,8 @@ REMARKABLE_FOLDER='Sink' # To create in top-level reMarkable folder
 
 **5 - Do a quick test with `yarn start`**
 
-Done 🎉
+Done 🎉 
+*(don't forgat to exit the process before setting up daemon)*
 
 ## Run at startup
 
@@ -64,6 +65,16 @@ Change line `:15` to reflect your folder absolute path
 ```bash
 mv com.remarkable-sink.hmenzagh.plist ~/Library/LaunchAgents/.
 ```
+
+6 - Start the daemon
+
+```bash
+launchctl load ~/Library/LaunchAgents/com.remarkable-sink.hmenzagh.plist
+launchctl start com.remarkable-sink.hmenzagh
+```
+or restart the computer !
+
+*(launchctl load can fail and is a known issue with Big Sur, in this case you should restart)*
 
 ### Linux
 
